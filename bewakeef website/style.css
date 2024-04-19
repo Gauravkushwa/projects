@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: scroll;
+}
+span{
+    transition: transform 0.5s;
+}
+span:hover{
+    transform: scale(1.1);
+}
+ img{
+    cursor: pointer;
+ }
+
+.logo{
+    position: fixed;
+    margin-top: -13%;
+    height: 40vh;
+}
+.upperlogo{
+    display: grid;
+    grid-template-columns: 2.5fr 4fr 1.1fr;
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -15%;
+    color: black;
+    background-color: #fff;
+}
+.branchupperlogo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px;
+}
+.branchupperlogo>span{
+    font-size: small;
+    cursor: pointer;
+}
+.mainlogo{
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    /* margin-top: 2.3%; */
+    background-color: white;
+}
+.mainbranchlogo{
+    display: flex;
+    margin: 6px;
+    align-items: center;
+}
+.mainbranchlogo >  img{
+    width: 26%;
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.mainbranchlogo > span{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.mainbranchlogo > .searchbarimg{
+    width: 5%;
+    margin-left: 20px;
+    background-color: #EAEAEA;
+}
+.mainbranchlogo > input{
+    padding: 10px;
+    width: 280px;
+    border: none;
+    outline: none;
+    background-color: #EAEAEA;
+}
+.mainlogo > #searchbox{
+    background-color: #EAEAEA;
+    border-radius: 8px;
+}
+.mainbranchlogo > .line{
+    border:  0.5px solid black;
+    height: 15px;
+    margin: 3px;
+    margin-right: 9px;
+}
+.mainbranchlogo > .heart{
+    width: 13%;
+    margin-left: -10px;
+}
+.mainbranchlogo > .bag{
+    width: 15%;
+    margin-left: -10px;
+}
+.downlogo{
+    width: 140%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    padding: 50px;
+    overflow-x: scroll;
+}
+.downlogo > span{
+   text-transform: uppercase;
+   width: 120%;
+   cursor: pointer;
+   font-size: x-large;
+   /* margin-left: 90px; */
+}
+
+
+/* First Images Sliders */
+
+.containers1{
+    display: flex;
+    width: 1200px;
+    overflow-x: scroll;
+}
+.containers1::-webkit-scrollbar{
+    display: none;
+}
+.images1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: none;
+}
+.images1 img{
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.buttons1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+.buttons1 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #12182134;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.buttons1 button .left{
+    margin-top: 15;
+}
+.containers1 .images1 img:hover{
+   transform: scale(1.1);
+}
+.images1 span img{
+    width: 100%;
+}
+
+.firstimgs{
+    width: 92%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-left: 4%;
+    margin-top: 2.5%;
+}
+
+.firstbranchimgs > img{
+    width: 90%;
+    transition: transform 0.5s;
+}
+.firstbranchimgs > img:hover{
+    transform: scale(1.1);
+}
+.firstbranchimgs > h4{
+    font-size: small;
+    text-align: center;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.banner{
+    margin-top: 5%;
+}
+.secondmainimgs{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    column-gap: 15px;
+    margin-top: 2%;
+}
+.secondmainimgs > .secondbranchimgs > img{
+    width: 110%;
+    transition: transform 0.5s;
+}
+.secondmainimgs > .secondbranchimgs > img:hover{
+    transform: scale(1.1);
+}
+
+             /* Second Images Slider */
+
+.containers2{
+    display: flex;
+    width: 1200px;
+    overflow-x: scroll;
+}
+.containers2::-webkit-scrollbar{
+    display: none;
+}
+.images2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 20px; */
+    flex: none;
+}
+.images2 span{
+    margin: 15px;
+}
+.images2 img{
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.buttons2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons2 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #12182134;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.buttons2 button .left2{
+    margin-top: 15;
+}
+.containers2 .images2 img:hover{
+transform: scale(1.1);
+}
+.images2 span img{
+    width: 100%;
+}
+
+.thirdimgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+.thirdbranchimgs img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.thirdbranchimgs img:hover{
+    transform: scale(1.05);
+}
+.fourthimgs{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5px;
+}
+.branchfourthimgs img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.branchfourthimgs img:hover{
+    transform: scale(1.1);
+}
+
+        /* Thirds Images Sliders */
+
+.containers3{
+    display: flex;
+    width: 1200px;
+    overflow-x: scroll;
+}
+.containers3::-webkit-scrollbar{
+    display: none;
+}
+.images3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 30px; */
+    flex: none;
+}
+.images3 span{
+    margin: 15px;
+}
+.images3 img{
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.buttons3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons3 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #12182134;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.buttons3 button .left2{
+    margin-top: 15;
+}
+.containers3 .images3 img:hover{
+transform: scale(1.1);
+}
+.images3 span img{
+    width: 100%;
+}
+
+
+.fifthimgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    width: 60%;
+    margin-left: 20%;
+}
+.fifthimgs .branchfifthimgs img{
+    height: 300px;
+    width: 100%;
+    transition: transform 0.5s;
+}
+.fifthimgs .branchfifthimgs img:hover{
+    transform: scale(1.1);
+}
+.wrapper4{
+    /* display: flex; */
+    justify-content: center;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.wrapper4 i{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 14%;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    cursor: pointer;
+    font-size: x-large;
+    transform: translateY(-50%);
+}
+.wrapper4{
+    width: calc(100% / 5);
+}
+.wrapper4 i:first-child{
+    left: 30px;
+}
+.wrapper4 i:last-child{
+    right: 30px;
+}
+.subwrapper{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    font-size: small;
+}
+.imagesContainer{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    overflow-x: scroll;
+    width: 1224px;
+}
+.imagesContainer::-webkit-scrollbar{
+    display: none;
+}
+.slider{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    flex: none;
+}
+.imagesContainer .slider img{
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.imagesContainer .slider img:hover{
+    transform: scale(1.1);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #8cfda5;
+    cursor: pointer;
+    font-size: xx-large;
+    border: none;
+}
+.heart{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.heart .heartimg{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: -8px;
+}
+/* .carousel4 .heart h4{
+    
+} */
+span .price{
+    display: flex;
+    margin-left: 5px;
+}
+span .price h4,del{
+    margin: 6px;
+    margin-bottom: 20px;
+}
+span p{
+    margin-left: 10px;
+    font-weight: 100;
+    color: #737373;
+    margin-top: -19px;
+}
+span .price p{
+    margin: 6px;
+    margin-left: 5px;
+    color: #00B852;
+}
+.slider span{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.explore{
+    color: #42A2A2;
+    text-align: center; 
+    font-weight: 900; 
+    cursor: pointer;
+    margin: 40px 0px 0px 46%;
+    padding: 7px 15px;
+    border: 1px solid #42A2A2;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+.explore:hover{
+    background-color: #42A2A2;
+    color: white;
+}
+.bestpic{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 900;
+}
+.blackpage{
+    background-color: black;
+    color: white;
+}
+.services{
+    width: 96%;
+    margin: 40px 0px 0px 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    row-gap: 10px;
+}
+.branchservices{
+    margin: 10px;
+}
+.services .branchservices img{
+    width: 10%;
+    margin: 5px;
+}
+.services .branchservices .apple{
+    width: 15%;
+}
+.services .branchservices p{
+    line-height: 25px;
+    font-weight: 300;
+    word-spacing: 5px;
+}
+.services .branchservices input{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+.services .branchservices .appstore{
+    width: 30%;
+    margin: 5px;
+}
+.verity{
+    width: 94%;
+    margin: 40px 0px 0px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+}
+@media  screen and (max-width: 920px) and (min-width: 450px) {
+   .mainlogo{
+    grid-template-rows: repeat(3,50px);
+    grid-column: 1;
+    grid-row: 3;
+   }
+   .mainbranchlogo span{
+    display: none;
+   }
+   .mainbranchlogo img{
+    width: 50%;
+   }
+   #searchbox{
+    display: none;
+   }
+   .images1{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .firstimgs{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+   }
+}
